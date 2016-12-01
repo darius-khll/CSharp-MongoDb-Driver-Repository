@@ -7,8 +7,13 @@ namespace AspCoreMongo.Model
     {
         [BsonId]
         public string Id { get; set; }
+
         public string Content { get; set; }
+
         public DateTimeOffset CreatedOn { get; set; } = DateTimeOffset.UtcNow;
+
+        public DateTimeOffset UpdatedOn { get; set; } = DateTimeOffset.UtcNow;
+
         public int UserId { get; set; } = 0;
     }
 }
