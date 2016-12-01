@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using AspCoreMongo.Context;
 
 namespace AspCoreMongo
 {
@@ -26,6 +27,8 @@ namespace AspCoreMongo
 
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddScoped<IPostRepository, PostRepository>();
+
             services.AddMvc();
         }
 
