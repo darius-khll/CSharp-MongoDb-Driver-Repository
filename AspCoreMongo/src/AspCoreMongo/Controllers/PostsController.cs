@@ -1,11 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using AspCoreMongo.Context;
-using Newtonsoft.Json;
+﻿using AspCoreMongo.Context;
 using AspCoreMongo.Model;
+using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json;
+using System;
+using System.Threading.Tasks;
 
 namespace AspCoreMongo.Controllers
 {
